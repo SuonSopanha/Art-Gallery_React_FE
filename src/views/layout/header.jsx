@@ -10,10 +10,10 @@ function Header() {
         {/* Navigation links */}
         <ul className="hidden sm:flex space-x-4">
           <li>
-            <a href="#" className="text-gray-700 hover:text-teal-700">Home</a>
+            <a href="/" className="text-gray-700 hover:text-teal-700">Home</a>
           </li>
           <li>
-            <a href="#" className="text-gray-700 hover:text-teal-700">About Us</a>
+            <a href="/about" className="text-gray-700 hover:text-teal-700">About Us</a>
           </li>
           <li>
             <a href="#" className="text-gray-700 hover:text-teal-700">Artists</a>
