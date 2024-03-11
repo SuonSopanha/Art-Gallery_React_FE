@@ -86,11 +86,11 @@ function FeaturedArtworks() {
             Featured Artworks
           </h2>
         </div>
-        <div className="container mx-auto px-4 flex justify-center mb-8">
+        <div className="container mx-auto px-4 flex justify-center flex-wrap mb-8">
           {categories.map((category) => (
             <button
               key={category} // Use category as unique key
-              className={`px-4 py-2 text-gray-700 hover:text-teal-700 border border-gray-300 rounded-md ${
+              className={`px-4 py-2 text-gray-700 hover:text-teal-700 border border-gray-300 rounded-md mb-2 md:mb-0 mr-2 md:mr-0 ${
                 selectedCategory === category ? "bg-gray-100 text-teal-700" : ""
               }`}
               onClick={() => handleCategoryChange(category)}
@@ -99,6 +99,7 @@ function FeaturedArtworks() {
             </button>
           ))}
         </div>
+
         <div className="grid md:grid-cols-3 gap-8">
           {filteredArtworks.map((artwork) => (
             <div
@@ -129,11 +130,9 @@ function FeaturedArtworks() {
             </div>
           ))}
         </div>
-        <button
-            className="mx-auto mt-8 px-4 py-2 items-center text-teal-700 bg-gray-100 rounded-md hover:bg-teal-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500"
-          >
-            Show More
-          </button>
+        <button className="mx-auto mt-8 px-4 py-2 items-center text-teal-700 bg-gray-100 rounded-md hover:bg-teal-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500">
+          Show More
+        </button>
       </div>
     </section>
   );
